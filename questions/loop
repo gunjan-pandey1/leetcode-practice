@@ -1,0 +1,33 @@
+1.  *
+    **
+    ***
+    ****
+    *****
+    ******
+
+2. Write a PHP program that prints the numbers from 1 to 50, but with the following conditions:
+
+If a number is divisible by 3, print "Fizz" instead of the number.
+If a number is divisible by 5, print "Buzz" instead of the number.
+If a number is divisible by both 3 and 5, print "FizzBuzz".
+Otherwise, just print the number.
+
+3. Reverse a Number: Write a PHP function that uses a while loop to reverse a given integer (e.g., 12345 becomes 54321). → Done
+
+Fibonacci Series: Generate the first n numbers of the Fibonacci series using a for loop. → Done
+
+Factorial Calculation: Compute the factorial of a number using a recursive loop and an iterative loop. Compare their performance.
+
+Prime Number Check: Write a function to check if a number is prime using a for loop, optimizing it to only check up to the square root.
+
+Pattern Printing: Print a pyramid pattern (e.g., a triangle of asterisks) using nested loops. → Done
+
+Sum of Digits: Calculate the sum of digits of a number using a while loop (e.g., 123 returns 6).
+
+Armstrong Number: Check if a number is an Armstrong number (e.g., 153 = 1³ + 5³ + 3³) using a loop.
+
+Count Even Numbers: Given a range (e.g., 1 to 100), count how many even numbers exist using a for loop. → Done
+
+Multiplication Table: Generate a multiplication table for a given number up to 10 using a loop. → Done   
+
+Find First N Perfect Squares: Write a function to print the first n perfect squares using a while loop.
