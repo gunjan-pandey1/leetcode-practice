@@ -1,0 +1,22 @@
+Array questions
+
+
+Array Reversal: Reverse an array in-place without using PHP’s built-in array_reverse() function.
+
+Find Duplicates: Write a function to find duplicate elements in an array using a single loop.
+
+Second Largest Element: Find the second largest element in an unsorted array without sorting it fully.
+
+Array Intersection: Given two arrays, find their common elements using PHP’s array functions and a manual loop-based approach.
+
+Rotate Array: Rotate an array by k positions to the right (e.g., [1, 2, 3, 4, 5] with k=2 becomes [4, 5, 1, 2, 3]).
+
+Merge Sorted Arrays: Merge two sorted arrays into a single sorted array without using extra space beyond the result.
+
+Remove Element: Remove all occurrences of a specific value from an array and return the new length.
+
+Array Chunking: Split an array into chunks of size n without using PHP’s array_chunk() function.
+
+Maximum Subarray Sum: Find the maximum sum of a contiguous subarray within a one-dimensional array.
+
+Group by Key: Given an array of associative arrays, group them by a specific key (e.g., group users by ‘department’).
