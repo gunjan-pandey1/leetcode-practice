@@ -1,5 +1,6 @@
 Array questions
 
+Given three sorted arrays in non-decreasing order, print all common elements in these arrays. Note: In case of duplicate common elements, print only once.
 
 Array Reversal: Reverse an array in-place without using PHP’s built-in array_reverse() function.
 
