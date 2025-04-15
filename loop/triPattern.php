@@ -10,4 +10,13 @@ function triPattern($arr)
     }
 }
 triPattern($arr)
+
+/*
+    output:
+    *
+    **
+    ***
+    ****
+    *****
+*/
 ?>
