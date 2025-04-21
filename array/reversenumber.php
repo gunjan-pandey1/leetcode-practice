@@ -19,6 +19,15 @@ while ($left < $right) {
 print_r($arr);
 
 
+function reverseArray($arr) {
+    $reversed = [];
+
+    for ($i = count($arr) - 1; $i >= 0; $i--) {
+        $reversed[] = $arr[$i]; // append to reversed array
+    }
+
+    return $reversed;
+}
 
 
 ?>
