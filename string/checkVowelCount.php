@@ -3,7 +3,7 @@
 function checkvowel($str){
     $vowelstr = 0;
     
-    $vowelen = strlen($str) - 1;
+    $vowelen = strlen($str) - 1;    
     $vowel = ['a','e','i','o','u']; 
     
    for ($i = 0; $i < strlen($str); $i++){

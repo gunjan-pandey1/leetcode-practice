@@ -27,4 +27,14 @@ $arr3 = [0, 0, 0, 0, 0]; // No 1 in the array
 echo "Transition Point in arr1: " . findTransitionPoint($arr1) . "<br>";
 echo "Transition Point in arr2: " . findTransitionPoint($arr2) . "<br>";
 echo "Transition Point in arr3: " . findTransitionPoint($arr3) . "<br>";
+
+// // in buit function
+// function findTransitionPoint($arr) {
+//     // Use array_search to find the first occurrence of 1
+//     $firstOne = array_search(1, $arr);
+    
+//     // array_search returns false if not found, so we return -1 in that case
+//     return $firstOne !== false ? $firstOne : -1;
+// }
+
 ?>

@@ -15,4 +15,8 @@ function getLargest($arr) {
 // Example usage
 $arr = [12, 35, 1, 10, 34, 1];
 echo getLargest($arr); // Output: 35
+        
+// in built function
+    return max($arr);
+
 ?>

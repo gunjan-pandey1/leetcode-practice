@@ -32,4 +32,21 @@ function getThirdLargest($arr) {
 // Example usage
 $arr = [12, 35, 1, 10, 34, 1];
 echo getThirdLargest($arr); // Output: 12
+
+
+// in buit function
+
+    // if (count($arr) < 3) {
+    //     return -1; // Not enough elements
+    // }
+    
+    // // Remove duplicates and sort in descending order
+    // $unique = array_unique($arr);
+    // rsort($unique);
+    
+    // // Return the third element if it exists, otherwise -1
+    // return $unique[2] ?? -1;
+
+
+
 ?>

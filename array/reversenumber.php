@@ -28,6 +28,13 @@ function reverseArray($arr) {
 
     return $reversed;
 }
+//output [3,2,1]
+
+//in built function
+
+// $arr = [1,2,3,4, 5];
+// $result = array_reverse($arr);
+// print_r($result);
 
 
 ?>

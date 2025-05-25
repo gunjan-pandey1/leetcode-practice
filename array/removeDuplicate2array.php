@@ -27,4 +27,17 @@ foreach ($array2 as $val2) {
 }
 
 print_r($mergedArray);
+
+//in built function
+
+// $array1 = [1, 2, 3];
+// $array2 = [3, 4, 5];
+
+// // Merge arrays and remove duplicates
+// $mergedArray = array_unique(array_merge($array1, $array2));
+
+// // Re-index the array
+// $mergedArray = array_values($mergedArray);
+
+// print_r($mergedArray); // Output: [1, 2, 3, 4, 5]
 ?>

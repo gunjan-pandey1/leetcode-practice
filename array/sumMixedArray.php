@@ -19,3 +19,7 @@ function sum_mix($arr) {
     return $sum;
 }
 
+//in built function
+// function sum_mix($arr) {
+//     return array_sum(array_map('intval', $arr));
+// }

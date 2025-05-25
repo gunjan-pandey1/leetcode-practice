@@ -22,4 +22,22 @@ $n = 8; // The highest number in the range
 
 // Function call and output result
 echo "The missing number is: " . findMissingNumber($arr, $n);
+
+//in built function
+// function findMissingNumber($arr, $n) {
+//     // Calculate expected sum using formula
+//     $expectedSum = ($n * ($n + 1)) / 2;
+    
+//     // Calculate actual sum using array_sum
+//     $actualSum = array_sum($arr);
+    
+//     // Return the difference
+//     return $expectedSum - $actualSum;
+// }
+
+// // Example usage
+// $arr = [1, 2, 4, 6, 3, 7, 8];
+// $n = 8;
+// echo "The missing number is: " . findMissingNumber($arr, $n); // Output: 5
+
 ?>

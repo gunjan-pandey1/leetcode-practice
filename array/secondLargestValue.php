@@ -19,5 +19,16 @@ function getSecondLargest($arr) {
 
 // Example usage
 $arr = [12, 35, 1, 10, 34, 1];
-echo getSecondLargest($arr);
+echo getSecondLargest($arr); // Output: 34
+
+//in built function
+
+// function getSecondLargest($arr) {
+//     // Remove duplicates and sort in descending order
+//     $unique = array_unique($arr);
+//     rsort($unique);
+    
+//     // Return the second element if it exists, otherwise -1
+//     return $unique[1] ?? -1;
+// }
 ?>
