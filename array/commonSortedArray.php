@@ -62,4 +62,43 @@ findCommonElementsOptimized($A1, $B1, $C1);
 
 echo "Common elements in second set: ";
 findCommonElementsOptimized($A2, $B2, $C2);
+
+/*
+Time Complexity Analysis:
+O(n) where n is the length of the smallest array among A, B, and C
+- The algorithm uses three pointers (i, j, k) and iterates through the arrays once
+- In each iteration, at least one pointer moves forward
+- The maximum number of iterations is bounded by the length of the smallest array
+- All other operations (array access, comparisons) are O(1)
+
+Space Complexity Analysis: 
+O(m) where m is the number of common elements found across all three arrays
+- We use an additional array 'common' to store common elements
+- In worst case, all elements could be common (when all arrays are identical)
+- We also use constant extra space for:
+  - Three pointers (i, j, k)
+  - Length variables (lenA, lenB, lenC)
+  - lastCommon variable
+
+Detailed Step-by-Step Explanation:
+1. Initialize pointers i, j, k at the start of arrays A, B, C respectively
+2. While all pointers are within bounds:
+   a. If A[i] = B[j] = C[k]:
+      - Found a common element
+      - Check if not duplicate using lastCommon
+      - Add to result array if unique
+      - Move all pointers forward
+   b. If not equal:
+      - Find smallest value among A[i], B[j], C[k]
+      - Move pointer of array with smallest value
+3. Continue until any pointer reaches end of its array
+4. Print common elements found
+
+The algorithm is efficient because:
+- Single pass through arrays
+- No backtracking needed
+- Handles duplicates without extra space
+- Takes advantage of sorted nature of input arrays
+*/
+
 ?>

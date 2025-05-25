@@ -39,5 +39,35 @@ echo "The missing number is: " . findMissingNumber($arr, $n);
 // $arr = [1, 2, 4, 6, 3, 7, 8];
 // $n = 8;
 // echo "The missing number is: " . findMissingNumber($arr, $n); // Output: 5
+/*
+Time Complexity Analysis:
+- O(n) where n is the size of the input array
+- The algorithm uses a single loop to calculate arraySum
+- The formula for totalSum is O(1)
+- Subtraction operation is O(1)
+
+Space Complexity Analysis: 
+- O(1) constant space
+- Only uses a few variables (totalSum, arraySum, missingNumber) 
+- No additional data structures needed
+
+Detailed Algorithm Explanation:
+1. Calculate expected sum using formula n*(n+1)/2
+   - Works because sum of first n natural numbers is n*(n+1)/2
+   - Takes O(1) time
+   
+2. Calculate actual array sum using loop
+   - Iterates through array once
+   - Adds each element to running sum
+   - Takes O(n) time
+   
+3. Find missing number by subtracting
+   - Difference between expected and actual sum
+   - Missing number must be this difference
+   - Takes O(1) time
+
+Overall efficient solution with linear time complexity
+and constant space complexity
+*/
 
 ?>

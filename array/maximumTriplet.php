@@ -52,4 +52,41 @@ echo maxProductTriplet($arr2) . "\n"; // Output: -90
 
 $arr3 = [1, -4, 3, -6, 7, 0];
 echo maxProductTriplet($arr3) . "\n"; // Output: 168
+
+/*
+Time Complexity Analysis:
+- O(n) where n is the length of the input array
+- The algorithm makes a single pass through the array to find the three largest and two smallest numbers
+- All other operations are constant time O(1)
+
+Space Complexity Analysis: 
+- O(1) constant space
+- Only uses a fixed number of variables (max1, max2, max3, min1, min2) regardless of input size
+
+Detailed Algorithm Explanation:
+1. Input Validation:
+   - Check if array has at least 3 elements
+   - Return error message if not enough elements
+
+2. Initialize Variables:
+   - Three variables for largest numbers (max1, max2, max3)
+   - Two variables for smallest numbers (min1, min2)
+   - This handles both positive and negative number cases
+
+3. Single Array Traversal:
+   - For each number in array:
+     a) Update three largest numbers if current number is larger
+     b) Update two smallest numbers if current number is smaller
+   - This maintains sorted order of max/min numbers efficiently
+
+4. Final Calculation:
+   - Compare two possible maximum products:
+     a) Product of three largest numbers (max1 * max2 * max3)
+     b) Product of two smallest numbers and largest number (min1 * min2 * max1)
+   - Return the larger of these two products
+
+The algorithm is optimal as it requires only one pass through the array
+and uses constant extra space.
+*/
+
 ?>
