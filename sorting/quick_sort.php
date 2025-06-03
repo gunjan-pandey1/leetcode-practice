@@ -6,23 +6,12 @@
  * @param array &$arr Reference to the array to be sorted
  * @param int $low Starting index of the partition
  * @param int|null $high Ending index of the partition
- * @throws InvalidArgumentException If array is empty
  * @return void
  */
 function quickSort(array &$arr, int $low = 0, ?int $high = null): void {
-    // Check if array is empty
-    if (empty($arr)) {
-        throw new InvalidArgumentException("Array cannot be empty");
-    }
-
     // Initialize high value for first call
     if (is_null($high)) {
         $high = count($arr) - 1;
-    }
-
-    // Validate indices
-    if ($low < 0 || $high >= count($arr)) {
-        throw new InvalidArgumentException("Invalid array indices");
     }
 
     // Base case: if low index is less than high index
@@ -66,12 +55,8 @@ function partition(array &$arr, int $low, int $high): int {
     return $i + 1;
 }
 
-// Example usage with error handling
-try {
-    $myArray = [64, 34, 25, 12, 22, 11, 90, 5];
-    quickSort($myArray);
-    echo "Sorted array: " . implode(', ', $myArray);
-} catch (InvalidArgumentException $e) {
-    echo "Error: " . $e->getMessage();
-}
+// Example usage
+$myArray = [64, 34, 25, 12, 22, 11, 90, 5];
+quickSort($myArray);
+echo "Sorted array: " . implode(', ', $myArray);
 ?>
